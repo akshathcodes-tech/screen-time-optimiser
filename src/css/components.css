@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Prata', serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Prata', serif;
+}
+
+h2 {
+    font-size: 31px;
+    font-family: 'Prata', serif;
+    color: var(--text);
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+    color: var(--text);
+    position: relative 
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+nav {
+    display: flex;
+    text-align: justify;
+    font-size: 18px;
+    color: var(--text);
+    position: relative;
+    display: flex;
+    background-color: var(--background);
+    justify-content: right; /* Horizontally centers the text block */
+    align-items: center;     /* Vertically centers the text block */
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--text);
+    border: none;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+}
+
+button:hover {
+    background-color: var(--accent);
+    transition: var(--transition);
+}

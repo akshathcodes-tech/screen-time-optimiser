@@ -1,0 +1,16 @@
+:root {
+    /* Color Palette */ 
+    --primary: #d3523d;
+    --background: #db6541;
+    --accent: #763940;
+    --card: #1a2133ec;
+    --success-color: #11491f;
+    --danger-color: #6a040f;
+    --text: #fffaf1;
+    --border: #fffaf1;
+
+    /* Other */
+    --radius: 18px;
+    --shadow: 0px 8px 24px rgba(0, 0, 0, 0.336);
+    --transition: all 0.5s ease;
+}
