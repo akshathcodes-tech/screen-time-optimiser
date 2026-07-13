@@ -56,3 +56,8 @@ button:hover {
     background-color: var(--accent);
     transition: var(--transition);
 }
+
+hr {
+    border: 1px solid var(--border);
+    margin: 20px 0;
+}

@@ -11,11 +11,13 @@
 }
 
 .overlay {
+    z-index: 1;
     position: absolute;
     inset: 0;
     top: 0;
     width: 40%;
     height: 100%;
+    pointer-events: none;
 }
 
 .gradient {
@@ -23,10 +25,8 @@
     left: 0;
     right: 0;
     bottom: -0.5px;
-    z-index: 1;
-   /* padding-bottom: 20px;*/
-
-
+    z-index: 2;
+    pointer-events: none;
     height: 35%;    
     background: linear-gradient(
         to bottom,
@@ -39,6 +39,7 @@
 
 
 .content {
+    z-index: 3;
     position: relative;
     top: 35%;
     padding-left: 5%;
@@ -47,6 +48,7 @@
 
 .navbar {
     font-size: 18px;
+    z-index: 4;
     color: var(--text);
     position: relative;
     display: flex;
