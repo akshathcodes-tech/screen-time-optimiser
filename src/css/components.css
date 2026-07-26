@@ -9,17 +9,23 @@ body {
 
 h1 {
     font-size: 48px;
-    font-family: 'Prata', serif;
+    font-family: 'Prata'', serif;
 }
 
 h2 {
     font-size: 31px;
     font-family: 'Prata', serif;
+    padding-bottom: 15px;
+    color: var(--text);
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Prata', serif;
     color: var(--text);
 }
 
 p {
-    text-align: justify;
     font-size: 18px;
     color: var(--text);
     position: relative 
@@ -54,10 +60,12 @@ button {
 
 button:hover {
     background-color: var(--accent);
+    transform: scale(1.11);
     transition: var(--transition);
 }
 
 hr {
     border: 1px solid var(--border);
-    margin: 20px 0;
+    margin: 0%;
 }
+
