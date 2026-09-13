@@ -1,48 +1,332 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/styles.css">
-    <link rel="stylesheet" href="/src/css/components.css">
-    <link rel="stylesheet" href="/src/css/questionnaire.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/questionnaire.css" />
+    <script src="../js/main.js" defer></script>
+    <script src="../js/questionnaire.js" defer></script>
     <title>Questionnaire</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="questionnaire-container">
-        <h1 class="questionnaire-title">[App Name]</h1>
-        <div class="progress">
-            <div class="progress-bar"></div>
+      <h1 class="questionnaire-title">[App Name]</h1>
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+
+      <div class="question-container">
+        <div class="question active">
+          <h3>What are your goals?</h3>
+          <label id="user_goals" aria-required="true">
+            <input
+              type="checkbox"
+              class="goals"
+              name="goals"
+              value="Learning"
+            />
+            <span>Learning</span>
+          </label>
+          <label>
+            <input type="checkbox" class="goals" name="goals" value="Coding" />
+            <span>Coding</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="goals"
+              name="goals"
+              value="Portfolio development"
+            />
+            <span>Portfolio development</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="goals"
+              name="goals"
+              value="Health and Fitness"
+            />
+            <span>Health and Fitness</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="goals"
+              name="goals"
+              value="Hobby development"
+            />
+            <span> Hobby development</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="goals"
+              name="goals"
+              value="Research"
+            />
+            <span>Research</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="goals"
+              name="goals"
+              value="Assignment"
+            />
+            <span>Task/ Assignment Completion</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="goals"
+              name="goals"
+              value="Employment"
+            />
+            <span>Job/ Internship hunting</span>
+          </label>
+
+          <div class="question-buttons">
+            <button class="next">Next</button>
+          </div>
         </div>
 
-        <div class="question-container">
+        <div class="question">
+          <h3>What is your approximate daily screen time?</h3>
+          <small
+            ><i>
+              Excluding screen time during school/work hours for
+              professional/academic purposes</i
+            ></small
+          >
+          <label>
+            <input
+              type="range"
+              min="0.5"
+              max="10"
+              step="0.5"
+              value="0.5"
+              class="screen-time"
+            />
+          </label>
+          <div class="screen-time-labels">
+            <span>30 min</span>
+            <span>10 hrs</span>
+          </div>
+          <div class="slider-value">
+            <span id="screen-time-value">0.5 hours</span>
+          </div>
 
-            <div class="question active">
-                <h4>What are your main goals?</h4>
-                <!-- answers -->
-                <div class="question-buttons">
-                    <button class="next">Next</button>
-                </div>
-            </div>
-
-            <div class="question">
-                <h4>How much time do you have available?</h4>
-                <!-- answers -->
-                <div class="question-buttons">
-                    <button class="previous">Previous</button>
-                    <button class="next">Next</button>
-                </div>
-            </div>
-
-            <div class="question">
-                <h4>Which activities do you enjoy?</h4>
-                <!-- answers -->
-                <div class="question-buttons">
-                    <button class="previous">Previous</button>
-                    <button class="next">Next</button>
-                </div>
-            </div>
+          <div class="question-buttons">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+          </div>
         </div>
+
+        <div class="question">
+          <h3>What are the goals you give the most priority to?</h3>
+          <small>Please select only 3 options</small>
+          <label id="user_priority_goals" aria-required="true">
+            <input
+              type="checkbox"
+              class="priority-goals"
+              name="priority-goals"
+              value="Learning"
+            />
+            <span>Learning</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="priority-goals"
+              name="priority-goals"
+              value="Coding"
+            />
+            <span>Coding</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="priority-goals"
+              name="priority-goals"
+              value="Portfolio development"
+            />
+            <span>Portfolio development</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="priority-goals"
+              name="priority-goals"
+              value="Health and Fitness"
+            />
+            <span>Health and Fitness</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="priority-goals"
+              name="priority-goals"
+              value="Hobby development"
+            />
+            <span> Hobby development</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="priority-goals"
+              name="priority-goals"
+              value="Research"
+            />
+            <span>Research</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="priority-goals"
+              name="priority-goals"
+              value="Assignment"
+            />
+            <span>Task/ Assignment Completion</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="priority-goals"
+              name="priority-goals"
+              value="Employment"
+            />
+            <span>Job/ Internship hunting</span>
+          </label>
+
+          <div class="question-buttons">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>How much entertainment time would you like?</h3>
+
+          <div class="choice-options">
+            <label>
+              <input type="radio" name="entertainment" value="0.5" />
+              <span>30 minutes</span>
+            </label>
+
+            <label>
+              <input type="radio" name="entertainment" value="1" />
+              <span>1 hour</span>
+            </label>
+
+            <label>
+              <input type="radio" name="entertainment" value="2" />
+              <span>2 hours</span>
+            </label>
+
+            <label>
+              <input type="radio" name="entertainment" value="3" />
+              <span>3 hours</span>
+            </label>
+
+            <label>
+              <input type="radio" name="entertainment" value="4" />
+              <span>4+ hours</span>
+            </label>
+
+            <label>
+              <input type="radio" name="entertainment" value="decide" />
+              <span>Let Screen Buddy decide</span>
+            </label>
+          </div>
+
+          <div class="question-buttons">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>How would you like your activities arranged?</h3>
+
+          <div class="choice-options">
+            <label>
+              <input type="radio" name="arrangement" value="long" />
+              <span>
+                <strong>Long focused sessions</strong><br />
+                Fewer, longer activity blocks
+              </span>
+            </label>
+
+            <label>
+              <input type="radio" name="arrangement" value="short" />
+              <span>
+                <strong>Short focused sessions</strong><br />
+                More frequent, shorter blocks
+              </span>
+            </label>
+
+            <label>
+              <input type="radio" name="arrangement" value="balanced" />
+              <span>
+                <strong>Balanced</strong><br />
+                A mixture of both
+              </span>
+            </label>
+
+            <label>
+              <input type="radio" name="arrangement" value="flexible" />
+              <span>
+                <strong>Flexible</strong><br />
+                Let Screen Buddy adapt the schedule
+              </span>
+            </label>
+          </div>
+
+          <div class="question-buttons">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>How often would you like breaks?</h3>
+
+          <div class="choice-options">
+            <label>
+              <input type="radio" name="breaks" value="30" />
+              <span>Every 30 minutes</span>
+            </label>
+
+            <label>
+              <input type="radio" name="breaks" value="45" />
+              <span>Every 45 minutes</span>
+            </label>
+
+            <label>
+              <input type="radio" name="breaks" value="60" />
+              <span>Every 1 hour</span>
+            </label>
+
+            <label>
+              <input type="radio" name="breaks" value="activity" />
+              <span>Whenever an activity ends</span>
+            </label>
+
+            <label>
+              <input type="radio" name="breaks" value="decide" />
+              <span>Let Screen Buddy decide</span>
+            </label>
+          </div>
+
+          <div class="question-buttons">
+            <button class="previous">Previous</button>
+            <button class="next">Generate Schedule</button>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
